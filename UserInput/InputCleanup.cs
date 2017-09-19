@@ -26,7 +26,7 @@ namespace UserInput
             {
                 float numerator = input * denominator;
                 float difference = Math.Abs(numerator - (float)Math.Round(numerator));
-                if (difference < 0.001)
+                if (difference < 0.001*input)
                 {
                     output += $"{numerator}/{denominator}";
                     return output;
